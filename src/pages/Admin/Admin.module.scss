@@ -1,0 +1,64 @@
+.admin{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button{
+        width: 400px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 20px 20px;
+        border: 3px solid transparent;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        &:hover{
+            border-bottom: 3px solid black;
+        }
+    }
+    .modal{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0);
+        .body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: gray;
+            padding: 20px 50px 10px 50px;
+            border-radius: 20px;
+            width: 300px;
+            input{
+                max-width: 375px;
+                width: 100%;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                border: 3px solid transparent;
+                outline: none;
+                transition: all 0.3s ease;
+                &:hover{
+                    border-bottom: 3px solid black;
+                }
+            }
+            .btns{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                button{
+                    width: 100px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .active{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,39 @@
+.device{
+    padding: 30px;
+    h1{
+        margin-bottom: 10px;
+    }
+    .device__body {
+        display: flex;
+        flex: 1 1 50%;
+        img{
+            max-width: 500px;
+            margin-right: 40px;
+        }
+        .device__basket {
+          width:400px;
+          height: 80px;
+          padding: 20px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 24px;
+          border-radius: 20px;
+          font-weight: bold;
+          button{
+            border: 1px solid transparent;
+            cursor: pointer;
+            background-color: rgb(29, 29, 29);
+            padding: 10px 20px;
+            font-size: 24px;
+            border-radius: 20px;
+            color: white;
+            &:hover{
+                transition: all 0.3s ease;
+                background-color: rgb(0, 0, 0);
+            }
+          }
+        }
+    }
+}

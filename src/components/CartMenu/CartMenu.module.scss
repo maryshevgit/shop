@@ -1,0 +1,92 @@
+.cart_menu {
+    position: absolute;
+    height: 100vh;
+    z-index: 2;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(189, 189, 189);
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transform: scale(0);
+}
+
+.active{
+    transform: scale(1);
+}
+
+.menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+  svg{
+    cursor: pointer;
+  }
+}
+
+.arrange {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.total_price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.menu__body{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+}
+
+.menu__item{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.button{
+    border: 3px solid transparent;
+    outline: none;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+        border-bottom: 3px solid black;
+    }
+}
+
+.body{
+    display: flex;
+    img{
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
+
+.delete{
+    svg{
+        cursor: pointer;
+        &:hover{
+            color: gray;
+            transition: all 0.3s ease;
+        }
+    }
+}

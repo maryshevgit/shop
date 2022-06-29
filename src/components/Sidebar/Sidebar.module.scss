@@ -1,0 +1,68 @@
+.sidebar{
+    border-left: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 1;
+    >button{
+        border: none;
+        outline: none;
+        margin-bottom: 15px;
+        cursor: pointer;
+        color: gray;
+        background-color: transparent;
+        &:hover{
+            color: black;
+            transition: all 0.4s ease;
+        }
+    }
+    >a{
+        border: none;
+        outline: none;
+        margin-bottom: 15px;
+        cursor: pointer;
+        color: gray;
+        &:hover{
+            color: black;
+            transition: all 0.4s ease;
+        }
+    }
+    >svg{
+        color: gray;
+        margin-bottom: 15px;
+        cursor: pointer;
+        &:hover{
+            color: black;
+            transition: all 0.4s ease;
+        }
+    }
+}
+.btn{
+    position: relative;
+}
+.input{
+    display: none;
+    position: absolute;
+    left: -182px;
+    bottom: -3px;
+    height: 30px;
+    width: 165px;
+    border-radius: 10px;
+    animation: animation 0.2s ease-in;
+
+}
+.active{
+    display: block;
+}
+
+@keyframes animation {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
