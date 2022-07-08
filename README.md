@@ -10,6 +10,7 @@
 ## STACK: 
 - firebase + reducer 
 - mobx 
+- axios
 - mockAPI
  
 
